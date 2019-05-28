@@ -232,6 +232,7 @@ val binding : ActivityKotlinBinding =   DataBindingUtil.setContentView(this, R.l
     </android.support.constraint.ConstraintLayout>
 </layout>
 ```
+
 **注意：有一下几点需要注意**
 - 必须在 `BindingMethods.kt`（类随意，位置随意） 中定义@BindingMethods 将 app:srcCompat 翻译为 view.setImageResource(drawable) 方法，因为我们用`R.drawable.ic_person_black_96dp` 的方式为ImageView 设置图片
 - 布局中必须引入 R 文件，否则无法找到相应的图片资源，方式如下 `<import type="com.example.tuoanlan.databindingexample.R" />
