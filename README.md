@@ -12,9 +12,15 @@ android {
 }
 
 ```
-**注意：**如果该 module 依赖了  libraries， 且 libraries 中使用 databinding，那么在 该 module 中也必须配置开启 dataBinding，就算不使用也需要开启。
 
-**补充：**：
+
+
+
+
+**注意：**
+如果该 module 依赖了  libraries， 且 libraries 中使用 databinding，那么在 该 module 中也必须配置开启 dataBinding，就算不使用也需要开启。
+
+**补充：**
 如果用` kotlin` ,最好在 `build.gradle` 的最上面加上
 
 `'apply plugin: 'kotlin-kapt'`
